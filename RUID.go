@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	id, err := aguid()
+	id, err := ruid()
 
 	if err != nil {
 		fmt.Println("error: ", err)
@@ -22,7 +22,7 @@ func main() {
 	fmt.Println(int64(9223372036854775807))
 }
 
-func aguid() (int64, error) {
+func ruid() (int64, error) {
 
 	c := 2
 	b := make([]byte, c)
